@@ -1,0 +1,38 @@
+<ion-header>
+ <ion-toolbar transparent>
+  <ion-title>Add Project</ion-title>
+  <ion-buttons end>
+    <button ion-button icon-only (click)="close()"><ion-icon name="close"></ion-icon></button>
+  </ion-buttons>
+ </ion-toolbar>
+</ion-header>
+ 
+<ion-content>
+ 
+  <ion-list no-lines>
+ 
+    <ion-item>
+      <ion-label floating>Address</ion-label>
+      <ion-input [(ngModel)]="address" type="text"></ion-input>
+    </ion-item>
+ 
+    <ion-item>
+      <ion-label floating>Description</ion-label>
+      <ion-textarea [(ngModel)]="description"></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Phone</ion-label>
+      <ion-input [(ngModel)]="phone" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Energy Rate</ion-label>
+      <ion-input [(ngModel)]="energyrate" type="text"></ion-input>
+    </ion-item>
+ 
+  </ion-list>
+ 
+  <button ion-button full color="secondary" (click)="save()">Save</button>
+ 
+</ion-content>
